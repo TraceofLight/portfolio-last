@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraceofLight's Protfolio</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer TraceOfLight">
+    <meta name="author" content="TraceOfLight"> 
+    <script src="https://kit.fontawesome.com/5e7f22e99b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    </style>
+    <!-- "font-family: "Open Sans", sans-serif;" for css-->
+    <link rel="icon" href="/imgs/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="/font-awesome.min.css" type="text/css">-->
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div id="full_container">
+    <!-- Navbar -->
+    <section>
+        <nav id="navbar">
+                    <div class="navbar__logo">
+                        <img class="favicon_logo" src="/imgs/logo.png" width="50px"
+                        alt="logo for portfolio">
+                        <a href="#">TraceofLight</a>
+                    </div>
+                    <ul class="navbar__menu">
+                        <li class="navbar__menu__item selected" data-link="#home">Home</li>
+                        <li class="navbar__menu__item" data-link="#about">About</li>
+                        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                        <li class="navbar__menu__item" data-link="#work">Work</li>
+                        <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+                        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+                    </ul>
+                    
+                    <!-- Toggle Button-->
+                    <button class="navbar__toggle-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+        </nav>
+    </section>
+    <!--Home-->
+    <section id="home">
+        <div class="home__container">
+            <img src="/imgs/profile.jpg" 
+            alt="TraceOfLight's Profile Photo"
+            id="home__avatar">
+            <h1 class="home__title">Hi, <br/> I'm Newbie Coder</h1>
+            <h2 class="home__description">Nice to meet you!</h2>
+            <button id="home__contact" data-link="#contact">
+            Contact Me
+            </button>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+        <h1 class="about__title">
+            About me
+        </h1>
+        <p class="about__description">
+            Dreaming developer about creative something
+        </p>
+        <!--major 1-->
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2 class="major__title">Front-End</h2>
+                <div id="major__description">
+                    Javascript, HTML, CSS<br/>etc...
+                </div>
+            </div>
+        <!--major 2-->
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="major__title">Mobile</h2>
+                <div id="major__description">
+                Android, IOS                
+                </div>
+            </div>
+        <!--major 3-->
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-tasks "></i>
+                </div>
+                <h2 class="major__title">ERP</h2>
+                <div id="major__description">
+                    SAP etc...
+                </div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <!--job 1-->
+            <div class="job">
+                <img src="/imgs/jobs/yonsei_symbol.png" alt="Symbol of Yonesei University" class="job__logo"> 
+                <div class="job__description">
+                    <p class="job__name">도시공학과 학사 졸업</p>
+                    <p class="job__period">From 2015.03 to 2022.02</p>
+                </div>
+            </div>
+            <!--job 2-->
+            <div class="job">
+                <i class="fas fa-file-code job__logo"></i>
+                <div class="job__description">
+                    <p class="job__name">비전공자로 코딩 수련중</p>
+                    <p class="job__period">From 2022.02</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <div>
+                <h1 class="skills__title">Skills</h1>
+                <h2 class="skills__description">Skills & Attributes</h2>
+                <p class="skills__comment">
+                    Nothing I mastered but growing everyday
+                </p>
+            </div>
+            <!--skillset progress-->
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Javascript</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>IOS Development</span></li>
+                            <li><span>A</span></li>
+                            <li><span>B</span></li>
+                            <li><span>C</span></li>
+                            <li><span>D</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git1</span></li>
+                            <li><span>Git2</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My works</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <div class="work__btn">
+                    <button class="category__btn" data-type="all">All
+                        <span class="category__count">6</span></button>
+                    <button class="category__btn" data-type="front">Front-End
+                        <span class="category__count">3</span></button>
+                    <button class="category__btn" data-type="back">Back-End
+                        <span class="category__count">2</span></button>
+                    <button class="category__btn" data-type="mobile">Mobile
+                        <span class="category__count">1</span></button>
+                </div>
+            </div>
+            <div class="work__projects">
+                <a href="https://github.com/TraceofLight/" 
+                class="project" target="blank" data-filter="front">
+                <img class="project__img" src="/imgs/projects/project1.png" alt="project 1">
+                <div class="project__description">
+                    <h3>ANYTHING</h3>
+                    <span>GOOD</span>
+                </div>
+                </a>
+                <a href="https://github.com/TraceoLight/" 
+                class="project" target="blank" data-filter="front">
+                <img class="project__img" src="/imgs/projects/project2.png" alt="project 2">
+                <div class="project__description">
+                    <h3>NEW</h3>
+                    <span>GOOD</span>
+                </div>
+                </a>
+                <a href="https://github.com/TraceofLight/" 
+                class="project" target="blank" data-filter="front">
+                <img class="project__img" src="/imgs/projects/project3.png" alt="project 3">
+                <div class="project__description">
+                    <h3>ANYTHING</h3>
+                    <span>GOOD</span>
+                </div>
+                </a>
+                <a href="https://github.com/TraceofLight/" 
+                class="project" target="blank" data-filter="back">
+                <img class="project__img" src="/imgs/projects/project4.png" alt="project 4">
+                <div class="project__description">
+                    <h3>NEW</h3>
+                    <span>GOOD</span>
+                </div>    
+                </a>
+                <a href="https://github.com/TraceofLight/" 
+                class="project" target="blank" data-filter="back">
+                <img class="project__img" src="/imgs/projects/project5.png" alt="project 5">
+                <div class="project__description">
+                    <h3>ANYTHING</h3>
+                    <span>GOOD</span>
+                </div>
+                </a>
+                <a href="https://github.com/TraceofLight/" 
+                class="project" target="blank" data-filter="mobile">
+                <img class="project__img" src="/imgs/projects/project6.png" alt="project 6">
+                <div class="project__description">
+                    <h3>NEW</h3>
+                    <span>GOOD</span>
+                </div>    
+                </a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img class="testimonial__avatar" 
+                    src="imgs/testimonials/people1.jpg" alt="people"/>
+                    <div class="testimonial__speech-bubble">
+                        <p>I'm sorry. I dragged you to show you this. Naruto Sasket, is this real? 
+                        It is a real battle between the world's greatest powers. 
+                        </p>
+                        <p class="name">
+                            <a href="https://github.com/TraceOfLight" class="name">
+                            Conan</a> / Detective
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>
+                        I want to see Sasuke. When did I become the best in the new class like this?
+                        </p>
+                        <p class="name">
+                            <a href="https://github.com/TraceOfLight" class="name">
+                            SAM</a> / Elite
+                        </p>
+                    </div>
+                    <img class="testimonial__avatar" src="imgs/testimonials/people1.jpg" alt="people">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" >
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">rickyjun45@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/TraceOfLight" target="_blank" class="github">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/heejun-kim-0105bb22a/" target="_blank" class="github">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2022 TraceOfLight - All rights reserved
+        </p>
+    </section>
+    <!-- Arrow Up -->
+        <button class="arrowBtn">
+            <img src="/imgs/arrow.png" 
+            alt="arrow_up_icon">
+        </button>
+    </div>
+</body>
+</html>
